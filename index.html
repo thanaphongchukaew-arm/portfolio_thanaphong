@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Portfolio ของ Thanaphong — นักพัฒนาเว็บไซต์และนักออกแบบ UI/UX ที่หลงใหลในการสร้างประสบการณ์ดิจิทัลที่สวยงาม">
+  <title>Thanaphong | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&family=Prompt:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav id="navbar" class="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-char logo-t">T</span><span class="logo-char logo-h">h</span><span
+          class="logo-char logo-a">a</span><span class="logo-char logo-n">n</span><span
+          class="logo-char logo-a2">a</span><span class="logo-char logo-p">p</span><span
+          class="logo-char logo-h2">h</span><span class="logo-char logo-o">o</span><span
+          class="logo-char logo-n2">n</span><span class="logo-char logo-g">g</span><span class="logo-cursor">_</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#certificates" class="nav-link">Certificates</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section id="hero" class="hero">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-glow hero-glow--1"></div>
+    <div class="hero-glow hero-glow--2"></div>
+    <div class="hero-content">
+      <p class="hero-greeting">
+        <span class="greeting-line"></span>
+        สวัสดีครับ, ผมชื่อ
+      </p>
+      <h1 class="hero-name">
+        <span class="hero-name-th">ธนพงศ์ ชูแก้ว (อาร์ม) </span>
+        <span class="hero-name-en">Thanaphong Chukaew</span>
+      </h1>
+      <h2 class="hero-title">
+        <span class="typewriter" id="typewriter"></span><span class="cursor">|</span>
+      </h2>
+      <p class="hero-description">
+        ผมสนุกกับการเรียนรู้และพัฒนาเว็บไซต์ มุ่งเน้นการสร้างผลงานดิจิทัลที่สวยงามและใช้งานง่ายสำหรับทุกคน
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn--primary">
+          <span>ดูผลงาน</span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M7 17l9.2-9.2M17 17V7.8H7.8" />
+          </svg>
+        </a>
+        <a href="#contact" class="btn btn--outline">ติดต่อผม</a>
+      </div>
+
+
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about" class="section about">
+    <div class="container">
+      <h2 class="section-title">
+        <span class="section-number">01.</span> เกี่ยวกับผม
+      </h2>
+      <div class="about-grid">
+        <div class="about-image-wrapper">
+          <div class="about-image">
+            <img src="proflie/proflie.jpg" alt="Thanaphong Profile" class="about-profile-img">
+          </div>
+          <div class="about-image-border"></div>
+        </div>
+        <div class="about-text">
+          <p>
+            สวัสดีครับ! ผมชื่อ <span class="highlight">ธนพงศ์ ชูแก้ว</span>
+            ผมสนใจอยากพัฒนาเว็บไซต์และกำลังเรียนรู้ไปทีละนิด
+          </p>
+          <p>
+            ผมมีความสนใจในด้าน <span class="highlight">Web Development</span>, <span class="highlight">UI/UX
+              Design</span> <span class="highlight">,Creative Coding</span>
+            แม้ตอนนี้ยังอยู่ในช่วงเริ่มต้นและยังไม่เก่งมากนัก แต่ก็พยายามฝึกฝนและพัฒนาทักษะให้ดีขึ้นทุกวัน
+          </p>
+          <p>
+            ผมชอบเรียนรู้เทคโนโลยีใหม่ๆ ฝึกเขียนโค้ด อ่านบทความเกี่ยวกับเทรนด์การออกแบบ
+            และลองสร้างผลงานทีละเล็กเพื่อเก็บประสบการณ์ไปเรื่อยๆ
+          </p>
+          <!-- ===== EDUCATION TIMELINE ===== -->
+          <div class="about-education">
+            <h3 class="education-title">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+                <path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5" />
+              </svg>
+              ประวัติการศึกษา
+            </h3>
+            <div class="education-timeline">
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2022 - ปัจจุบัน</div>
+                <h4 class="timeline-degree">ปริญญาตรี (กำลังศึกษาชั้นปีที่ 4)</h4>
+                <p class="timeline-detail">สาขาวิทยาการคอมพิวเตอร์ (computer science)</p>
+                <span class="timeline-GPA">เกรดเฉลี่ยสะสม (GPA): 2.62</span>
+                <span class="timeline-institution">มหาวิทยาลัยกรุงเทพ (Bangkok University)</span>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2019 - 2022</div>
+                <h4 class="timeline-degree">ปวช.(ประกาศนียบัตรวิชาชีพ)</h4>
+                <p class="timeline-detail">สาขาวิชาคอมพิวเตอร์ธุรกิจ</p>
+                <span class="timeline-GPA">เกรดเฉลี่ยสะสม (GPA): 3.63</span>
+                <h4 class="timeline-institution">วิทยาลัยอาชีวศึกษาสันติราษฎร์ ในพระอุปถัมภ์ฯ</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section id="skills" class="section skills">
+    <div class="container">
+      <h2 class="section-title">
+        <span class="section-number">02.</span> ทักษะ
+      </h2>
+      <div class="skills-grid">
+        <!-- Language -->
+        <div class="skill-card" data-category="language">
+          <div class="skill-card-glow"></div>
+          <div class="skill-icon">
+            <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.5">
+              <circle cx="12" cy="12" r="10" />
+              <line x1="2" y1="12" x2="22" y2="12" />
+              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+            </svg>
+          </div>
+          <h3 class="skill-card-title">Language</h3>
+          <ul class="skill-list skill-list--bullets">
+            <li>Thai-Native</li>
+            <li>English-Elementary</li>
+          </ul>
+        </div>
+
+        <!-- Programming Skills -->
+        <div class="skill-card" data-category="programming-skills">
+          <div class="skill-card-glow"></div>
+          <div class="skill-icon">
+            <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.5">
+              <polyline points="16 18 22 12 16 6" />
+              <polyline points="8 6 2 12 8 18" />
+            </svg>
+          </div>
+          <h3 class="skill-card-title">Programming Skills</h3>
+          <ul class="skill-list skill-list--bullets">
+            <li class="skill-list-item">
+              <span class="skill-name">python</span>
+              <span class="skill-level level-intermediate">Intermediate</span>
+            </li>
+            <li class="skill-list-item">
+              <span class="skill-name">html</span>
+              <span class="skill-level level-intermediate">Intermediate</span>
+            </li>
+            <li class="skill-list-item">
+              <span class="skill-name">java</span>
+              <span class="skill-level level-intermediate">Intermediate</span>
+            </li>
+            <li class="skill-list-item">
+              <span class="skill-name">docker</span>
+              <span class="skill-level level-intermediate">Intermediate</span>
+            </li>
+            <li class="skill-list-item">
+              <span class="skill-name">github</span>
+              <span class="skill-level level-intermediate">Intermediate</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Skills -->
+        <div class="skill-card" data-category="skills">
+          <div class="skill-card-glow"></div>
+          <div class="skill-icon">
+            <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+              <polyline points="22 4 12 14.01 9 11.01" />
+            </svg>
+          </div>
+          <h3 class="skill-card-title">Skills</h3>
+          <div class="skill-list">
+            <div class="skill-list-item no-bullet">
+              <span class="skill-name">Programming</span>
+              <span class="skill-level level-intermediate">Intermediate</span>
+            </div>
+            <div class="skill-list-item no-bullet">
+              <span class="skill-name">Generative AI Tools</span>
+              <span class="skill-level level-proficient">Proficient</span>
+            </div>
+            <div class="skill-list-item no-bullet">
+              <span class="skill-name">Prompt Engineering</span>
+              <span class="skill-level level-intermediate">Intermediate</span>
+            </div>
+            <div class="skill-list-item no-bullet">
+              <span class="skill-name">computer software</span>
+              <span class="skill-level level-advanced">Advanced</span>
+            </div>
+            <div class="skill-list-item no-bullet">
+              <span class="skill-name">computer hardware</span>
+              <span class="skill-level level-advanced">Advanced</span>
+            </div>
+            <div class="skill-list-item no-bullet">
+              <span class="skill-name">English</span>
+              <span class="skill-level level-elementary">Elementary</span>
+            </div>
+            <div class="skill-list-item no-bullet">
+              <span class="skill-name">Reading and writing</span>
+              <span class="skill-level level-advanced">Advanced</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section id="projects" class="section projects">
+    <div class="container">
+      <h2 class="section-title">
+        <span class="section-number">03.</span> ผลงาน
+      </h2>
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <article class="project-card project-card--featured">
+          <div class="project-image">
+            <a href="https://project2.byteboy.pro/index.php" target="_blank" rel="noopener noreferrer"
+              style="display: block; width: 100%; height: 100%;">
+              <img src="Project pic\project1.png" alt="E-Commerce Platform Dashboard">
+            </a>
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="https://project2.byteboy.pro/index.php" target="_blank" rel="noopener noreferrer"
+                  class="project-link" aria-label="View live demo">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6" />
+                    <polyline points="15 3 21 3 21 9" />
+                    <line x1="10" y1="14" x2="21" y2="3" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <span class="project-label">Project</span>
+            <h3 class="project-name">
+              <a href="https://project2.byteboy.pro/index.php" target="_blank" rel="noopener noreferrer"
+                style="transition: color var(--transition-fast);">IT Support Ticket</a>
+            </h3>
+            <p class="project-desc">
+              เว็บไซด์แจ้งปัญหาคอมพิวเตอร์หรืออุปกรณ์อิเล็กทรอนิกส์ไปยังแผนกไอที
+              เพื่อลดการทำงานที่ซ้ำซ้อนและลดเวลาโดยสามารถเรียงลำดับความสำคัญและติดตามสถานะของปัญหาได้
+            </p>
+            <div class="project-tech">
+
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card project-card--featured">
+          <div class="project-image">
+            <a href="https://travelranking.infinityfreeapp.com/?i=1" target="_blank" rel="noopener noreferrer"
+              style="display: block; width: 100%; height: 100%;">
+              <img src="Project pic/project2.png" alt="Travel Ranking Platform">
+            </a>
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="https://travelranking.infinityfreeapp.com/?i=1" target="_blank" rel="noopener noreferrer"
+                  class="project-link" aria-label="View live demo">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6" />
+                    <polyline points="15 3 21 3 21 9" />
+                    <line x1="10" y1="14" x2="21" y2="3" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <span class="project-label">Project</span>
+            <h3 class="project-name">
+              <a href="https://travelranking.infinityfreeapp.com/?i=1" target="_blank" rel="noopener noreferrer"
+                style="transition: color var(--transition-fast);">Travel-Ranking</a>
+            </h3>
+            <p class="project-desc">
+              เว็บไซต์ค้นหาและจัดอันดับสถานที่ท่องเที่ยวในฝันยอดนิยมทั่วไทย
+              จัดอันดับโดยนักท่องเที่ยวตัวจริง พร้อมระบบค้นหาและข้อมูลการท่องเที่ยว
+            </p>
+            <div class="project-tech">
+
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-card project-card--featured">
+          <div class="project-image">
+            <a href="https://www.tiktok.com/@freeandfreeserum/video/7639600596558826760?is_from_webapp=1&sender_device=pc"
+              target="_blank" rel="noopener noreferrer" style="display: block; width: 100%; height: 100%;">
+              <img src="Project pic/project3.jpg" alt="Free & Free Serum TikTok Video"
+                style="object-fit: contain; background-color: #050508;">
+            </a>
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="https://www.tiktok.com/@freeandfreeserum/video/7639600596558826760?is_from_webapp=1&sender_device=pc"
+                  target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View live demo">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6" />
+                    <polyline points="15 3 21 3 21 9" />
+                    <line x1="10" y1="14" x2="21" y2="3" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">ห
+            <span class="project-label">Project</span>
+            <h3 class="project-name">
+              <a href="https://www.tiktok.com/@freeandfreeserum/video/7639600596558826760?is_from_webapp=1&sender_device=pc"
+                target="_blank" rel="noopener noreferrer" style="transition: color var(--transition-fast);">Campaign
+                Free & Free
+              </a>
+            </h3>
+            <p class="project-desc">
+              ผลิตแคมเปญโฆษณาแนวตั้ง ความยาว 30 วินาที เพื่อโปรโมตผลิตภัณฑ์บำรุงผมแบรนด์ Free & Free
+              โดยได้รับรางวัลรองชนะเลิศอันดับ 1
+            </p>
+            <div class="project-tech">
+
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CERTIFICATES ===== -->
+  <section id="certificates" class="section certificates">
+    <div class="container">
+      <h2 class="section-title">
+        <span class="section-number">04.</span> ใบประกาศนียบัตร
+      </h2>
+      <p class="certificates-intro">
+        ใบประกาศนียบัตรและหลักสูตรที่ผมได้เรียนรู้เพื่อพัฒนาทักษะด้านเทคโนโลยีและการพัฒนาเว็บไซต์
+      </p>
+      <div class="certificates-grid">
+        <article class="certificate-card">
+          <div class="certificate-image">
+            <img src="certificates/cert-ai-government.png" alt="ใบประกาศนียบัตร AI for Government Services จาก TDGA">
+            <button class="certificate-view-btn" type="button" aria-label="ดูใบประกาศนียบัตร"
+              data-cert-title="AI for Government Services" data-cert-issuer="Thailand Digital Government Academy (TDGA)"
+              data-cert-date="4 ธ.ค. 2568">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M15 3h6v6" />
+                <path d="M10 14 21 3" />
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+              </svg>
+            </button>
+          </div>
+          <div class="certificate-info">
+            <span class="certificate-date">4 ธ.ค. 2568</span>
+            <h3 class="certificate-name">AI for Government Services</h3>
+            <p class="certificate-issuer">Thailand Digital Government Academy (TDGA)</p>
+          </div>
+        </article>
+
+        <article class="certificate-card">
+          <div class="certificate-image">
+            <img src="certificates/cert-ai-governance.png" alt="ใบประกาศนียบัตร AI Governance &amp; Ethics จาก TDGA">
+            <button class="certificate-view-btn" type="button" aria-label="ดูใบประกาศนียบัตร"
+              data-cert-title="AI Governance &amp; Ethics" data-cert-issuer="Thailand Digital Government Academy (TDGA)"
+              data-cert-date="4 ธ.ค. 2568">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M15 3h6v6" />
+                <path d="M10 14 21 3" />
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+              </svg>
+            </button>
+          </div>
+          <div class="certificate-info">
+            <span class="certificate-date">4 ธ.ค. 2568</span>
+            <h3 class="certificate-name">AI Governance &amp; Ethics</h3>
+            <p class="certificate-issuer">Thailand Digital Government Academy (TDGA)</p>
+          </div>
+        </article>
+
+        <article class="certificate-card">
+          <div class="certificate-image">
+            <img src="certificates/cert-digital-literacy.png" alt="ใบประกาศนียบัตร Digital Literacy จาก TDGA">
+            <button class="certificate-view-btn" type="button" aria-label="ดูใบประกาศนียบัตร"
+              data-cert-title="Digital Literacy : Digital Intelligence"
+              data-cert-issuer="Thailand Digital Government Academy (TDGA)" data-cert-date="4 ธ.ค. 2568">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M15 3h6v6" />
+                <path d="M10 14 21 3" />
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+              </svg>
+            </button>
+          </div>
+          <div class="certificate-info">
+            <span class="certificate-date">4 ธ.ค. 2568</span>
+            <h3 class="certificate-name">Digital Literacy : Digital Intelligence</h3>
+            <p class="certificate-issuer">Thailand Digital Government Academy (TDGA)</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certificate Modal -->
+  <div id="cert-modal" class="cert-modal" aria-hidden="true">
+    <div class="cert-modal-backdrop"></div>
+    <div class="cert-modal-content" role="dialog" aria-modal="true" aria-labelledby="cert-modal-title">
+      <button class="cert-modal-close" type="button" aria-label="ปิด">
+        <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18" />
+          <line x1="6" y1="6" x2="18" y2="18" />
+        </svg>
+      </button>
+      <div class="cert-modal-preview">
+        <div class="cert-modal-placeholder">
+          <svg viewBox="0 0 24 24" width="64" height="64" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M4 4h16v12H4z" />
+            <path d="M8 20h8" />
+            <path d="M12 16v4" />
+            <circle cx="12" cy="10" r="2" />
+          </svg>
+          <span>ใส่รูปใบประกาศนียบัตรที่นี่</span>
+        </div>
+      </div>
+      <div class="cert-modal-info">
+        <h3 id="cert-modal-title" class="cert-modal-title"></h3>
+        <p class="cert-modal-issuer"></p>
+        <span class="cert-modal-date"></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="section contact">
+    <div class="container">
+      <h2 class="contact-title-centered">ติดต่อฉัน</h2>
+
+      <div class="contact-card-custom">
+        <p class="contact-subtitle">หากสนใจผลงานของผมหรือต้องการสอบถามข้อมูลเพิ่มเติม สามารถติดต่อได้ที่:</p>
+
+        <div class="contact-info-list">
+          <a href="tel:+66944139232" class="contact-info-item">
+            <span class="contact-info-text">Line or Tell 📱 +66 62-663-3234</span>
+          </a>
+
+          <div class="contact-info-item contact-info-item--emails">
+            <a href="mailto:thanaphong.chuk@bumail.net" class="contact-email-link">
+              <span class="contact-info-text">1. ✉️ thanaphong.chuk@bumail.net</span>
+            </a>
+            <a href="mailto:thanaphong.chukaew@gmail.com" class="contact-email-link">
+              <span class="contact-info-text">2. ✉️ thanaphong.chukaew@gmail.com</span>
+            </a>
+          </div>
+
+          <div class="contact-info-item">
+            <span class="contact-info-text">
+              📍 Live at 91 Soi Lat Phrao 93,<br> Khlong Chao Khun Singh Subdistrict, Wang Thonglang
+              District,10310,Bangkok,Thailand
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <p class="footer-text">
+          ออกแบบ &amp; พัฒนาโดย <span class="highlight">Thanaphong Chukaew</span>
+        </p>
+        <p class="footer-copy">&copy; 2026 All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
