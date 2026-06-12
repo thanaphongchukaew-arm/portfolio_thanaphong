@@ -1682,6 +1682,26 @@ ul {
   text-decoration: none;
 }
 
+.contact-icon {
+  color: var(--accent-primary);
+  filter: drop-shadow(0 0 8px rgba(0, 240, 255, 0.3));
+  transition: transform var(--transition-fast), filter var(--transition-fast);
+}
+
+.contact-info-item:hover .contact-icon {
+  transform: scale(1.1);
+  filter: drop-shadow(0 0 12px rgba(0, 240, 255, 0.6));
+}
+
+.contact-info-item--emails .contact-icon {
+  color: var(--accent-secondary);
+  filter: drop-shadow(0 0 8px rgba(123, 97, 255, 0.3));
+}
+
+.contact-info-item--emails:hover .contact-icon {
+  filter: drop-shadow(0 0 12px rgba(123, 97, 255, 0.6));
+}
+
 /* Link Hover States */
 a.contact-info-item:hover {
   background: rgba(32, 32, 50, 0.85);
