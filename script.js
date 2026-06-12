@@ -6,7 +6,7 @@ const phrases = [
   'Web Developer',
   'AI Agent Architect',
   'UI/UX Designer',
-  'Web Designr',
+  'Web Designer',
 
 ];
 let phraseIndex = 0;
